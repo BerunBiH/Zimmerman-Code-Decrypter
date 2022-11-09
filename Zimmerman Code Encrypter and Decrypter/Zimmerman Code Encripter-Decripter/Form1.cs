@@ -15,7 +15,7 @@ namespace Zimmerman_Code_Encripter_Decripter
         {
             InitializeComponent();
         }
-        private void DecodeBtn_Click(object sender, EventArgs e)
+        private void DecryptBtn_Click(object sender, EventArgs e)
         {
             translated = string.Empty;
             richTextBox2.Text = string.Empty;
@@ -54,13 +54,13 @@ namespace Zimmerman_Code_Encripter_Decripter
             richTextBox2.Text=translated;
         }
 
-        private void EncodeBtn_Click(object sender, EventArgs e)
+        private void EncryptBtn_Click(object sender, EventArgs e)
         {
             string inputText = richTextBox1.Text;
             inputText = inputText.Replace(" ", string.Empty);
             inputText = inputText.ToUpper();
             char[] temp2 = inputText.ToCharArray();
-            string encripted = null;
+            string encrypted = null;
             for (int i = 0; i < temp2.Length; i++)
             {
                 bool hasFoundCombo = false;
@@ -70,8 +70,8 @@ namespace Zimmerman_Code_Encripter_Decripter
                     {
                         if (code[j, k].Contains(temp2[i]))
                         {
-                            encripted += codeNumber[j];
-                            encripted += codeNumber[k];
+                            encrypted += codeNumber[j];
+                            encrypted += codeNumber[k];
                             hasFoundCombo = true;
                         }
                     }
@@ -79,7 +79,7 @@ namespace Zimmerman_Code_Encripter_Decripter
                         break;
                 }
             }
-            richTextBox2.Text=encripted;
+            richTextBox2.Text=encrypted;
         }
     }
 }

@@ -34,8 +34,8 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.EncodeBtn = new System.Windows.Forms.Button();
-            this.DecodeBtn = new System.Windows.Forms.Button();
+            this.EncryptBtn = new System.Windows.Forms.Button();
+            this.DecryptBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label5 = new System.Windows.Forms.Label();
@@ -48,9 +48,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(120, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(603, 37);
+            this.label1.Size = new System.Drawing.Size(611, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Hello, and welcome to the Zimmerman Encoder ! ";
+            this.label1.Text = "Hello, and welcome to the Zimmerman Encrypter! ";
             // 
             // label2
             // 
@@ -58,10 +58,10 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(57, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(704, 19);
+            this.label2.Size = new System.Drawing.Size(726, 19);
             this.label2.TabIndex = 1;
-            this.label2.Text = "We can help you decode the Zimmerman Telegraph or encode your own messages with t" +
-    "he same code, have fun !";
+            this.label2.Text = "We can help you decipher the Zimmerman Telegraph or encrypter your own messages w" +
+    "ith the same code, have fun !";
             // 
             // richTextBox1
             // 
@@ -89,25 +89,25 @@
             this.richTextBox2.TabIndex = 4;
             this.richTextBox2.Text = "";
             // 
-            // EncodeBtn
+            // EncryptBtn
             // 
-            this.EncodeBtn.Location = new System.Drawing.Point(136, 226);
-            this.EncodeBtn.Name = "EncodeBtn";
-            this.EncodeBtn.Size = new System.Drawing.Size(191, 23);
-            this.EncodeBtn.TabIndex = 5;
-            this.EncodeBtn.Text = "Encode ";
-            this.EncodeBtn.UseVisualStyleBackColor = true;
-            this.EncodeBtn.Click += new System.EventHandler(this.EncodeBtn_Click);
+            this.EncryptBtn.Location = new System.Drawing.Point(136, 226);
+            this.EncryptBtn.Name = "EncryptBtn";
+            this.EncryptBtn.Size = new System.Drawing.Size(191, 23);
+            this.EncryptBtn.TabIndex = 5;
+            this.EncryptBtn.Text = "Encrypt";
+            this.EncryptBtn.UseVisualStyleBackColor = true;
+            this.EncryptBtn.Click += new System.EventHandler(this.EncryptBtn_Click);
             // 
-            // DecodeBtn
+            // DecryptBtn
             // 
-            this.DecodeBtn.Location = new System.Drawing.Point(503, 226);
-            this.DecodeBtn.Name = "DecodeBtn";
-            this.DecodeBtn.Size = new System.Drawing.Size(191, 23);
-            this.DecodeBtn.TabIndex = 6;
-            this.DecodeBtn.Text = "Decode";
-            this.DecodeBtn.UseVisualStyleBackColor = true;
-            this.DecodeBtn.Click += new System.EventHandler(this.DecodeBtn_Click);
+            this.DecryptBtn.Location = new System.Drawing.Point(503, 226);
+            this.DecryptBtn.Name = "DecryptBtn";
+            this.DecryptBtn.Size = new System.Drawing.Size(191, 23);
+            this.DecryptBtn.TabIndex = 6;
+            this.DecryptBtn.Text = "Decrypt";
+            this.DecryptBtn.UseVisualStyleBackColor = true;
+            this.DecryptBtn.Click += new System.EventHandler(this.DecryptBtn_Click);
             // 
             // label4
             // 
@@ -141,8 +141,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.DecodeBtn);
-            this.Controls.Add(this.EncodeBtn);
+            this.Controls.Add(this.DecryptBtn);
+            this.Controls.Add(this.EncryptBtn);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.richTextBox1);
@@ -151,7 +151,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
-            this.Text = "Zimmerman Encoder";
+            this.Text = "Zimmerman Encrypter and Decrypter";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,8 +165,8 @@
         private RichTextBox richTextBox1;
         private Label label3;
         private RichTextBox richTextBox2;
-        private Button EncodeBtn;
-        private Button DecodeBtn;
+        private Button EncryptBtn;
+        private Button DecryptBtn;
         private Label label4;
         private ErrorProvider errorProvider1;
         private Label label5;

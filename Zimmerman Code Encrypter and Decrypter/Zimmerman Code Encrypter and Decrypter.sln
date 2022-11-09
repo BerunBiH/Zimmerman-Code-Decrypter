@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zimmerman Code Encripter-Decripter", "Zimmerman Code Encripter-Decripter\Zimmerman Code Encripter-Decripter.csproj", "{2B93E79A-D425-46A1-94C1-F0DEB0E4673C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zimmerman Code Encrypter and Decrypter", "Zimmerman Code Encripter-Decripter\Zimmerman Code Encrypter and Decrypter.csproj", "{2B93E79A-D425-46A1-94C1-F0DEB0E4673C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
